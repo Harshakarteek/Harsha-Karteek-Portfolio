@@ -1,0 +1,41 @@
+.Aboutsection
+{
+    display: flex;
+    margin-top: 120px;
+}
+.Heading
+{
+    text-align: center;
+}
+
+.Aboutsectioncontainer
+{
+    display: flex;
+}
+
+.SectionPicContainer
+{
+    display: flex;
+    flex:1;
+    margin: auto 0;
+}
+
+.AboutPic
+{
+    height: 400px;
+    width: 400px;         
+    border-radius: 50%;  
+    object-fit: cover; 
+}
+
+.ExperienceandDegree
+{
+    display: flex;
+    flex:1;
+}
+
+.Experience
+{
+    display: flex;
+    background-color: wheat;
+}

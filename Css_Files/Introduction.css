@@ -14,22 +14,139 @@
 {
     height: 400px;
     width: 400px;         
-    border-radius: 50%;   
+    border-radius: 50%;  
     object-fit: cover;    
 }
 
 .IntroductionRight
 {
-    margin-left: 30px;
     display: flex;
-    flex:1;
-    justify-content: left;
-    flex-direction: column; 
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 80px;
+}
+
+.Firstline
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+.Secondline
+{
+     text-align: center;
+     font-size: 25px;
+}
+
+.Thirdline
+{
+     text-align: center;
+     font-size: 30px;
+}
+
+.ButtonDivforIntro_top
+{
+    display: flex;
+}
+
+.IntroductionRight button
+{
+                border-radius: 50px;
+                padding-top: 14px;
+                padding-bottom: 14px;
+                padding-left: 20px;
+                padding-right: 20px;
+                cursor: pointer;
+                margin: 6px;       
+                cursor : pointer;      
+}
+
+.ResumeButton
+{
+        background-color: transparent;
+        border-color: black;
+        border-style: solid;
+        border-width: 2px;
+        color: black;
+        vertical-align: top;  
+        transition: all;
+        transition-duration: .5s;
+        box-shadow: -2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.ResumeButton:hover
+{
+    color: white;
+    background-color: rgb(36, 34, 34); 
+    box-shadow: none;
+}
+
+.ContactInfo
+{
+    color: white;
+    background-color: rgb(53, 53, 53);
+    border-color: rgb(23, 23, 23);
+    border-style: solid;
+    border-width: 1px;   
+    transition: all;
+    transition-duration: .5s;
+    box-shadow: -2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.ContactInfo:hover
+{
+    color: white;
+    background-color: black;
+    box-shadow: none;
+}
+
+.ButtonDivforIntro_bottom
+{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.linkedinButton,
+.githubButton {
+    height: 70px;   
+    padding: 0;
+    border: none;    
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedinButton img,
+.githubButton img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .IntroductionRight p
 {
-    font-size: 20px;
     font-weight: bold;
-    
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+.Firstline
+{
+   color: rgb(85, 85, 85); 
+}
+
+.Secondline
+{
+    font-size: 40px;
+}
+
+.Thirdline
+{
+    color: rgb(85, 85, 85);
 }
