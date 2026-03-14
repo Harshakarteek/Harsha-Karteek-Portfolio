@@ -986,6 +986,7 @@ body[data-page="game"] .play-card {
   display: block;
   width: 100%;
   height: auto;
+  min-height: 220px;
   aspect-ratio: 19 / 10.5;
   touch-action: none;
 }

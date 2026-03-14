@@ -239,6 +239,22 @@ function renderMeta(content) {
   }
 }
 
+function drawRoundedRect(context, x, y, width, height, radius) {
+  const safeRadius = Math.min(radius, width / 2, height / 2);
+
+  context.beginPath();
+  context.moveTo(x + safeRadius, y);
+  context.lineTo(x + width - safeRadius, y);
+  context.quadraticCurveTo(x + width, y, x + width, y + safeRadius);
+  context.lineTo(x + width, y + height - safeRadius);
+  context.quadraticCurveTo(x + width, y + height, x + width - safeRadius, y + height);
+  context.lineTo(x + safeRadius, y + height);
+  context.quadraticCurveTo(x, y + height, x, y + height - safeRadius);
+  context.lineTo(x, y + safeRadius);
+  context.quadraticCurveTo(x, y, x + safeRadius, y);
+  context.closePath();
+}
+
 function initMiniGame() {
   const canvas = document.getElementById("play-canvas");
   const startButton = document.getElementById("play-start");
@@ -530,13 +546,11 @@ function initMiniGame() {
     paddleGradient.addColorStop(0, "#ffbf71");
     paddleGradient.addColorStop(1, "#7fd3cc");
     context.fillStyle = paddleGradient;
-    context.beginPath();
-    context.roundRect(state.catcher.x, state.catcher.y, state.catcher.width, state.catcher.height, 16);
+    drawRoundedRect(context, state.catcher.x, state.catcher.y, state.catcher.width, state.catcher.height, 16);
     context.fill();
 
     context.fillStyle = "rgba(255, 255, 255, 0.24)";
-    context.beginPath();
-    context.roundRect(state.catcher.x + 10, state.catcher.y + 4, state.catcher.width - 20, 5, 16);
+    drawRoundedRect(context, state.catcher.x + 10, state.catcher.y + 4, state.catcher.width - 20, 5, 3);
     context.fill();
   }
 
@@ -551,6 +565,18 @@ function initMiniGame() {
   function updatePointer(clientX) {
     const rect = canvas.getBoundingClientRect();
     state.pointerX = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+  }
+
+  function handleTouchMove(event) {
+    const touch = event.touches[0];
+
+    if (!touch) {
+      return;
+    }
+
+    event.preventDefault();
+    state.dragging = true;
+    updatePointer(touch.clientX);
   }
 
   function setMoveDirection(direction, isActive) {
@@ -617,6 +643,38 @@ function initMiniGame() {
 
   canvas.addEventListener("pointercancel", () => {
     state.dragging = false;
+  });
+
+  canvas.addEventListener(
+    "touchstart",
+    (event) => {
+      const touch = event.touches[0];
+
+      if (!touch) {
+        return;
+      }
+
+      ensureAudioContext();
+      state.dragging = true;
+      updatePointer(touch.clientX);
+
+      if (!state.running) {
+        resetRun();
+      }
+    },
+    { passive: true }
+  );
+
+  canvas.addEventListener("touchmove", handleTouchMove, { passive: false });
+
+  ["touchend", "touchcancel"].forEach((eventName) => {
+    canvas.addEventListener(
+      eventName,
+      () => {
+        state.dragging = false;
+      },
+      { passive: true }
+    );
   });
 
   [
