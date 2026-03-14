@@ -1,0 +1,17 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#06111E"/>
+  <rect x="140" y="160" width="920" height="580" rx="44" fill="#101B31"/>
+  <rect x="190" y="220" width="820" height="88" rx="24" fill="#0D1528"/>
+  <circle cx="242" cy="264" r="12" fill="#FF8E53"/>
+  <circle cx="278" cy="264" r="12" fill="#FFD6BF"/>
+  <circle cx="314" cy="264" r="12" fill="#52D7FF"/>
+  <rect x="214" y="368" width="310" height="264" rx="32" fill="#52D7FF" fill-opacity="0.2"/>
+  <rect x="564" y="368" width="194" height="86" rx="22" fill="#8B9CFF"/>
+  <rect x="564" y="482" width="390" height="38" rx="19" fill="#DDE7F8"/>
+  <rect x="564" y="546" width="302" height="38" rx="19" fill="#AAB7D1"/>
+  <rect x="564" y="610" width="252" height="38" rx="19" fill="#FF8E53"/>
+  <circle cx="972" cy="128" r="148" fill="#52D7FF" fill-opacity="0.18"/>
+  <circle cx="1038" cy="792" r="180" fill="#FF8E53" fill-opacity="0.15"/>
+  <text x="140" y="110" fill="#F3F7FF" font-family="Arial, sans-serif" font-size="42" font-weight="700">HYBRID PORTFOLIO RELAUNCH</text>
+  <text x="140" y="816" fill="#AAB7D1" font-family="Arial, sans-serif" font-size="26">A static recruiter-focused rebuild with stronger identity, structure, and motion.</text>
+</svg>

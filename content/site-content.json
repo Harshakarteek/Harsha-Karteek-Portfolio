@@ -1,0 +1,129 @@
+{
+  "shared": {
+    "contact": {
+      "email": "harshakarteek007@gmail.com",
+      "github": "https://github.com/Harshakarteek",
+      "itch": "https://harsha-karteek.itch.io/",
+      "linkedinLabel": "Add my LinkedIn URL here later",
+      "resume": "Assets/Harsha%20Karteek%20Resume%20.pdf"
+    }
+  },
+  "web": {
+    "eyebrow": "Web Development",
+    "title": "I’m building my web portfolio around clean interfaces, responsive layouts, and steady full-stack growth.",
+    "intro": "I’m still early in my web journey, but I take it seriously. I like turning ideas into usable pages, improving structure, and learning how frontend and backend work together in real products.",
+    "identity": "I don’t want my web work to feel like random practice. I want it to show how I think, how I structure interfaces, and how I’m growing into full-stack development with intention.",
+    "about_title": "I want my web page to feel focused, clear, and easy to scan.",
+    "about_body": "When I build for the web, I care about spacing, readability, responsive behavior, and making the experience feel smooth instead of cluttered. I’m not trying to overstate my level. I’d rather show honest progress and solid improvement.",
+    "goal": "My goal is to grow into a strong full-stack developer who can handle frontend quality, understand backend flows, and build products that feel polished for real users.",
+    "feature_title": "This page itself is part of my web development proof.",
+    "feature_name": "My Portfolio Rebuild",
+    "feature_body": "I rebuilt this portfolio so my web work has its own dedicated space, cleaner structure, and content that I can manage outside the page markup.",
+    "skills": [
+      {
+        "title": "Frontend",
+        "items": ["HTML", "CSS", "JavaScript", "Responsive UI"]
+      },
+      {
+        "title": "Backend Track",
+        "items": ["Node.js", "Express.js", "REST concepts", "Database basics"]
+      },
+      {
+        "title": "What I focus on",
+        "items": ["Cleaner layouts", "Readable structure", "Usable navigation", "Interaction polish"]
+      },
+      {
+        "title": "What I’m learning",
+        "items": ["API integration", "Full-stack flow", "Deployment basics", "Project structure"]
+      }
+    ],
+    "projects": [
+      {
+        "title": "Portfolio Rebuild",
+        "summary": "I redesigned my portfolio into separate web and game pages so each field has its own space and identity.",
+        "role": "Design and Frontend Build",
+        "stack": ["HTML", "CSS", "JavaScript", "JSON content"],
+        "image": "Assets/project-web-portfolio.svg",
+        "githubUrl": "https://github.com/Harshakarteek/Harsha-Karteek-Portfolio",
+        "liveUrl": null
+      },
+      {
+        "title": "Responsive UI Practice",
+        "summary": "I use responsive interface practice to improve layout control, spacing, readability, and cleaner visual flow.",
+        "role": "Frontend Practice",
+        "stack": ["HTML", "CSS", "Responsive Design"],
+        "image": "Assets/project-web-ui.svg",
+        "githubUrl": null,
+        "liveUrl": null
+      },
+      {
+        "title": "Full-Stack Learning Track",
+        "summary": "I’m actively learning backend structure and API-driven thinking so I can build stronger end-to-end projects over time.",
+        "role": "Learning and Build Track",
+        "stack": ["Node.js", "Express", "Databases", "REST APIs"],
+        "image": "Assets/project-web-fullstack.svg",
+        "githubUrl": null,
+        "liveUrl": null
+      }
+    ]
+  },
+  "game": {
+    "eyebrow": "Game Development",
+    "title": "I build game experiences around atmosphere, interaction, and playable ideas that people can actually try.",
+    "intro": "Game development is where I feel strongest right now. I enjoy building prototypes, shaping mechanics, and creating atmosphere that supports the player experience from the first moment.",
+    "identity": "I don’t want my game page mixed with my web page because the work, tools, and way I think about interaction are different. Here I want the focus to stay fully on games.",
+    "about_title": "I want my game page to show playable proof, not just claims.",
+    "about_body": "I like building projects where the player can feel movement, pacing, tension, and environment design working together. I’m most comfortable in Unity, and I also use Unreal for level design exploration.",
+    "goal": "My goal is to keep improving as a game developer through stronger mechanics, better atmosphere, and more complete playable builds while expanding what I can ship publicly.",
+    "feature_title": "This is the project that represents my game work best right now.",
+    "feature_name": "The Happy Place: Smile of Deception",
+    "feature_body": "I built this horror experience around tension, atmosphere, and escape. It reflects the side of my work that I currently feel most confident showing.",
+    "skills": [
+      {
+        "title": "Engines",
+        "items": ["Unity", "Unreal", "2D projects", "3D projects"]
+      },
+      {
+        "title": "Development",
+        "items": ["Gameplay scripting", "Prototyping", "Level feel", "Interaction flow"]
+      },
+      {
+        "title": "Genres",
+        "items": ["Horror", "Adventure", "Survival", "Multiplayer ideas"]
+      },
+      {
+        "title": "Tools",
+        "items": ["C#", "Maya", "Photoshop", "Substance tools"]
+      }
+    ],
+    "projects": [
+      {
+        "title": "The Happy Place: Smile of Deception",
+        "summary": "I built this psychological horror game around tension, dark atmosphere, and escape-driven storytelling.",
+        "role": "Game Developer",
+        "stack": ["Unity", "Maya", "Photoshop", "Substance"],
+        "image": "Assets/project-happy-place.svg",
+        "githubUrl": null,
+        "liveUrl": "https://harsha-karteek.itch.io/the-happy-place-the-smile-of-deception"
+      },
+      {
+        "title": "Knockout Party",
+        "summary": "I explored fast multiplayer obstacle-race gameplay with party-game energy and 3D movement.",
+        "role": "Game Developer",
+        "stack": ["Unity", "3D", "Multiplayer Prototype"],
+        "image": "Assets/project-knockout.svg",
+        "githubUrl": null,
+        "liveUrl": "https://harsha-karteek.itch.io/knockout-partyfirst-edition"
+      },
+      {
+        "title": "Save The Eggs",
+        "summary": "I built this 2D survival game around arcade-style timing, speed scaling, and score-based play.",
+        "role": "Gameplay Programmer",
+        "stack": ["C#", "Unity 2D", "Visual Studio"],
+        "image": "Assets/project-save-eggs.svg",
+        "githubUrl": null,
+        "liveUrl": "https://harsha-karteek.itch.io/save-the-eggs"
+      }
+    ]
+  }
+}

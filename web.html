@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harsha Karteek | Web Dev</title>
+    <meta
+      name="description"
+      content="Web development portfolio of Harsha Karteek with frontend work, full-stack learning, and responsive UI projects."
+    />
+    <link rel="icon" type="image/png" href="Assets/HK.png" />
+    <link rel="stylesheet" href="Css_Files/Style.css" />
+    <link rel="stylesheet" href="Css_Files/mediaqueries.css" />
+  </head>
+  <body data-page="web">
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="top-nav" aria-label="Primary">
+          <a class="logo" href="index.html">HK</a>
+          <div class="page-switcher">
+            <a class="switch-pill" href="game.html">Game Dev</a>
+            <a class="switch-pill is-active" href="web.html">Web Dev</a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="mobile-nav" aria-label="Mobile">
+          <a class="logo" href="index.html">HK</a>
+          <button
+            class="hamburger-icon"
+            id="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="menu-links" id="mobile-menu">
+            <li><a href="game.html">Game Dev</a></li>
+            <li><a href="web.html">Web Dev</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section page-hero" id="top">
+          <div class="hero-copy reveal">
+            <p class="eyebrow" data-field="eyebrow"></p>
+            <h1 data-field="title"></h1>
+            <p class="hero-text" data-field="intro"></p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">See My Web Projects</a>
+              <a
+                class="btn btn-secondary"
+                href="Assets/Harsha%20Karteek%20Resume%20.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open Resume
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="portrait-card">
+              <img src="Assets/HK.png" alt="Portrait of Harsha Karteek" class="portrait" />
+              <div class="portrait-glow portrait-glow-web"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="identity-band reveal">
+          <p data-field="identity"></p>
+        </section>
+
+        <section class="section" id="about">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About My Web Work</p>
+            <h2 data-field="about_title"></h2>
+          </div>
+          <div class="about-grid single-track">
+            <article class="glass-card reveal">
+              <h3>How I see it</h3>
+              <p data-field="about_body"></p>
+            </article>
+            <article class="glass-card reveal">
+              <h3>What I'm building toward</h3>
+              <p data-field="goal"></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section spotlight-section" id="projects">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Featured Web Build</p>
+            <h2 data-field="feature_title"></h2>
+          </div>
+          <article class="spotlight-card reveal">
+            <div class="spotlight-copy">
+              <span class="spotlight-tag">Web Focus</span>
+              <h3 data-field="feature_name"></h3>
+              <p data-field="feature_body"></p>
+            </div>
+            <div class="spotlight-visual">
+              <img src="Assets/project-web-portfolio.svg" alt="Featured web project artwork" />
+            </div>
+          </article>
+          <div class="project-grid reveal" id="project-grid"></div>
+        </section>
+
+        <section class="section" id="skills">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Skills</p>
+            <h2>I'm keeping my web stack focused, honest, and growing.</h2>
+          </div>
+          <div class="skills-grid" id="skills-grid"></div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>If my web track fits what you need, I'd love to talk.</h2>
+          </div>
+          <div class="contact-layout">
+            <article class="contact-card reveal" id="contact-card"></article>
+            <article class="contact-card reveal">
+              <h3>Send me a message</h3>
+              <form
+                class="contact-form"
+                action="https://formsubmit.co/harshakarteek007@gmail.com"
+                method="POST"
+              >
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_subject" value="New portfolio message" />
+                <label>
+                  Name
+                  <input type="text" name="name" required />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" required />
+                </label>
+                <label>
+                  Message
+                  <textarea name="message" rows="5" required></textarea>
+                </label>
+                <button class="btn btn-primary" type="submit">Send Message</button>
+              </form>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <a class="logo footer-logo" href="index.html">Harsha Karteek</a>
+          <p>I'm building my web portfolio around clarity, responsiveness, and steady full-stack growth.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <p class="copyright">
+          Copyright <span id="year"></span> Harsha Karteek. All rights reserved.
+        </p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

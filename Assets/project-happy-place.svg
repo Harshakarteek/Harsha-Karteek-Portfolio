@@ -1,0 +1,17 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#090D18"/>
+  <rect width="1200" height="900" fill="url(#paint0_radial_1_2)" fill-opacity="0.9"/>
+  <circle cx="925" cy="180" r="164" fill="#FF7C5C" fill-opacity="0.18"/>
+  <circle cx="182" cy="735" r="218" fill="#52D7FF" fill-opacity="0.18"/>
+  <path d="M244 726C355 576 471 430 634 316C730 248 858 204 972 222C910 305 870 397 870 501C870 617 922 704 986 784C844 838 666 814 516 796C410 783 314 764 244 726Z" fill="#111A2E"/>
+  <path d="M730 278C675 316 630 364 594 420C556 481 520 551 450 578C421 589 389 592 361 580C449 466 566 359 730 278Z" fill="#26354F"/>
+  <text x="110" y="150" fill="#F3F7FF" font-family="Arial, sans-serif" font-size="42" font-weight="700">THE HAPPY PLACE</text>
+  <text x="110" y="205" fill="#FFB89D" font-family="Arial, sans-serif" font-size="24" letter-spacing="3">PSYCHOLOGICAL HORROR / UNITY</text>
+  <text x="110" y="770" fill="#AAB7D1" font-family="Arial, sans-serif" font-size="26">Atmosphere, escape tension, dark interactive storytelling.</text>
+  <defs>
+    <radialGradient id="paint0_radial_1_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 450) rotate(90) scale(450 620)">
+      <stop stop-color="#192540"/>
+      <stop offset="1" stop-color="#090D18"/>
+    </radialGradient>
+  </defs>
+</svg>

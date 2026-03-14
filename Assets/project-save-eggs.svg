@@ -1,0 +1,21 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#0B1422"/>
+  <rect width="1200" height="900" fill="url(#paint0_linear_1_3)"/>
+  <ellipse cx="306" cy="186" rx="122" ry="78" fill="#FFE5A8"/>
+  <ellipse cx="892" cy="724" rx="216" ry="122" fill="#52D7FF" fill-opacity="0.14"/>
+  <rect x="100" y="224" width="1000" height="520" rx="52" fill="#111D33"/>
+  <path d="M214 622C324 555 396 514 470 490C551 464 630 452 742 452C823 452 885 465 994 500V626H214V622Z" fill="#FF8E53"/>
+  <circle cx="336" cy="432" r="42" fill="#FFF8E9"/>
+  <circle cx="530" cy="372" r="42" fill="#FFF8E9"/>
+  <circle cx="716" cy="322" r="42" fill="#FFF8E9"/>
+  <circle cx="892" cy="402" r="42" fill="#FFF8E9"/>
+  <text x="100" y="144" fill="#F3F7FF" font-family="Arial, sans-serif" font-size="42" font-weight="700">SAVE THE EGGS</text>
+  <text x="100" y="192" fill="#FFE5A8" font-family="Arial, sans-serif" font-size="24" letter-spacing="3">2D SURVIVAL / C# / UNITY</text>
+  <text x="100" y="800" fill="#AAB7D1" font-family="Arial, sans-serif" font-size="26">Arcade catch-and-survive gameplay with score loops and rising speed.</text>
+  <defs>
+    <linearGradient id="paint0_linear_1_3" x1="600" y1="0" x2="600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#13203A"/>
+      <stop offset="1" stop-color="#09111E"/>
+    </linearGradient>
+  </defs>
+</svg>
