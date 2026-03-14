@@ -176,6 +176,66 @@
             </article>
           </div>
         </section>
+
+        <section class="section play-section" id="play">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Play A Mini Game</p>
+            <h2 data-field="play_title">Catch the glow before it drops.</h2>
+          </div>
+          <div class="play-shell reveal">
+            <div class="play-copy">
+              <p data-field="play_intro">
+                Move the paddle, catch the falling sparks, build score, and try to stay alive as the speed rises.
+              </p>
+              <div class="play-actions">
+                <button class="btn btn-primary" id="play-start" type="button">Start Game</button>
+                <button class="btn btn-secondary" id="play-sound" type="button" aria-pressed="true">Sound On</button>
+              </div>
+              <ul class="play-rules">
+                <li>Move with your mouse, finger, or arrow keys.</li>
+                <li>Catch sparks to score and push the pace higher.</li>
+                <li>Miss three sparks and the run ends.</li>
+              </ul>
+            </div>
+            <div class="play-card">
+              <div class="play-stats" aria-live="polite">
+                <div class="play-stat">
+                  <span class="play-label">Score</span>
+                  <strong id="play-score">0</strong>
+                </div>
+                <div class="play-stat">
+                  <span class="play-label">Best</span>
+                  <strong id="play-best">0</strong>
+                </div>
+                <div class="play-stat">
+                  <span class="play-label">Lives</span>
+                  <strong id="play-lives">3</strong>
+                </div>
+              </div>
+              <div class="play-canvas-wrap">
+                <canvas
+                  class="play-canvas"
+                  id="play-canvas"
+                  width="760"
+                  height="420"
+                  aria-label="Mini game area where you catch falling sparks"
+                ></canvas>
+                <div class="play-overlay" id="play-overlay">
+                  <p class="play-overlay-title">Catch The Sparks</p>
+                  <p class="play-overlay-text">Start when you're ready.</p>
+                </div>
+              </div>
+              <div class="play-touch-controls" aria-label="Mini game touch controls">
+                <button class="play-touch-button" id="play-left" type="button" aria-label="Move left">
+                  <span aria-hidden="true">←</span>
+                </button>
+                <button class="play-touch-button" id="play-right" type="button" aria-label="Move right">
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer class="site-footer">

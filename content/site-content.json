@@ -53,19 +53,39 @@
     "skills": [
       {
         "title": "Frontend",
-        "items": ["HTML", "CSS", "JavaScript", "Responsive Design"]
+        "items": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Responsive Design"
+        ]
       },
       {
         "title": "Backend",
-        "items": ["Node.js", "Express.js", "REST APIs", "Database fundamentals"]
+        "items": [
+          "Node.js",
+          "Express.js",
+          "REST APIs",
+          "Database fundamentals"
+        ]
       },
       {
         "title": "Development Focus",
-        "items": ["Clean UI structure", "Responsive layouts", "Readable architecture", "Usable navigation"]
+        "items": [
+          "Clean UI structure",
+          "Responsive layouts",
+          "Readable architecture",
+          "Usable navigation"
+        ]
       },
       {
         "title": "Currently Expanding",
-        "items": ["API integration", "Full-stack architecture", "Deployment workflows", "Project scalability"]
+        "items": [
+          "API integration",
+          "Full-stack architecture",
+          "Deployment workflows",
+          "Project scalability"
+        ]
       }
     ],
     "projects": [
@@ -73,7 +93,12 @@
         "title": "Developer Portfolio Platform",
         "summary": "A modular developer portfolio designed with structured content management using JSON to separate presentation from data.",
         "role": "Design and Frontend Development",
-        "stack": ["HTML", "CSS", "JavaScript", "JSON"],
+        "stack": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "JSON"
+        ],
         "image": "Assets/project-web-portfolio.svg",
         "githubUrl": "https://github.com/Harshakarteek/Harsha-Karteek-Portfolio",
         "liveUrl": null
@@ -82,7 +107,11 @@
         "title": "Responsive Interface Experiments",
         "summary": "A collection of responsive layout exercises focused on improving UI structure, spacing systems, and adaptive design patterns.",
         "role": "Frontend Development",
-        "stack": ["HTML", "CSS", "Responsive UI"],
+        "stack": [
+          "HTML",
+          "CSS",
+          "Responsive UI"
+        ],
         "image": "Assets/project-web-ui.svg",
         "githubUrl": null,
         "liveUrl": null
@@ -91,7 +120,12 @@
         "title": "Full-Stack Learning Track",
         "summary": "An ongoing development track exploring backend architecture, API-driven applications, and server-side development using Node.js and Express.",
         "role": "Full-Stack Learning and Development",
-        "stack": ["Node.js", "Express", "Databases", "REST APIs"],
+        "stack": [
+          "Node.js",
+          "Express",
+          "Databases",
+          "REST APIs"
+        ],
         "image": "Assets/project-web-fullstack.svg",
         "githubUrl": null,
         "liveUrl": null
@@ -125,19 +159,39 @@
     "skills": [
       {
         "title": "Engines",
-        "items": ["Unity", "Unreal Engine", "2D Development", "3D Development"]
+        "items": [
+          "Unity",
+          "Unreal Engine",
+          "2D Development",
+          "3D Development"
+        ]
       },
       {
         "title": "Programming",
-        "items": ["C#", "Gameplay Systems", "Interaction Design", "Prototyping"]
+        "items": [
+          "C#",
+          "Gameplay Systems",
+          "Interaction Design",
+          "Prototyping"
+        ]
       },
       {
         "title": "XR Development",
-        "items": ["XR Interaction Toolkit", "OVR Integration", "Meta Quest Development", "VR Interaction Systems"]
+        "items": [
+          "XR Interaction Toolkit",
+          "OVR Integration",
+          "Meta Quest Development",
+          "VR Interaction Systems"
+        ]
       },
       {
         "title": "Tools",
-        "items": ["Git", "Maya", "Substance Painter", "ProBuilder"]
+        "items": [
+          "Git",
+          "Maya",
+          "Substance Painter",
+          "ProBuilder"
+        ]
       }
     ],
     "projects": [
@@ -145,7 +199,13 @@
         "title": "The Happy Place: Smile of Deception",
         "summary": "A psychological horror experience built in Unity featuring exploration mechanics, environmental tension, and escape-based gameplay progression.",
         "role": "Gameplay Programmer & Level Designer",
-        "stack": ["Unity", "C#", "Maya", "Substance", "Photoshop"],
+        "stack": [
+          "Unity",
+          "C#",
+          "Maya",
+          "Substance",
+          "Photoshop"
+        ],
         "image": "Assets/project-happy-place.svg",
         "githubUrl": null,
         "liveUrl": "https://harsha-karteek.itch.io/the-happy-place-the-smile-of-deception"
@@ -154,7 +214,12 @@
         "title": "Knockout Party",
         "summary": "A multiplayer obstacle-race prototype focused on fast-paced party gameplay with dynamic traps and player interactions.",
         "role": "Gameplay & Multiplayer Programmer",
-        "stack": ["Unity", "Photon Multiplayer", "C#", "3D Gameplay"],
+        "stack": [
+          "Unity",
+          "Photon Multiplayer",
+          "C#",
+          "3D Gameplay"
+        ],
         "image": "Assets/project-knockout.svg",
         "githubUrl": null,
         "liveUrl": "https://harsha-karteek.itch.io/knockout-partyfirst-edition"
@@ -163,7 +228,11 @@
         "title": "Save The Eggs",
         "summary": "A 2D arcade survival game centered on reaction timing, increasing difficulty, and score-based progression.",
         "role": "Gameplay Programmer",
-        "stack": ["Unity 2D", "C#", "Visual Studio"],
+        "stack": [
+          "Unity 2D",
+          "C#",
+          "Visual Studio"
+        ],
         "image": "Assets/project-save-eggs.svg",
         "githubUrl": null,
         "liveUrl": "https://harsha-karteek.itch.io/save-the-eggs"
@@ -172,11 +241,17 @@
         "title": "Hunt",
         "summary": "A level design prototype built in Unreal Engine exploring environmental layout, pacing, and player navigation within a playable space.",
         "role": "Level Designer",
-        "stack": ["Unreal Engine", "Blueprints", "Level Design"],
+        "stack": [
+          "Unreal Engine",
+          "Blueprints",
+          "Level Design"
+        ],
         "image": "Assets/project-hunt.svg",
         "githubUrl": null,
         "liveUrl": null
       }
-    ]
+    ],
+    "play_title": "I added a small playable spark catcher here so the page feels like a game space, not just a gallery.",
+    "play_intro": "Catch the falling sparks, keep your streak alive, and see how long you can stay in control as the pace speeds up."
   }
 }

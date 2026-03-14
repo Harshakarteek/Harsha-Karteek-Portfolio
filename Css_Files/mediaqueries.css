@@ -14,6 +14,7 @@
   .hero,
   .spotlight-card,
   .contact-layout,
+  .play-shell,
   .landing-bridge {
     grid-template-columns: 1fr;
   }
@@ -76,7 +77,8 @@
 
   .hero-actions,
   .footer-links,
-  .project-links {
+  .project-links,
+  .play-actions {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -87,6 +89,14 @@
 
   .project-cover {
     min-height: 180px;
+  }
+
+  .play-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .play-touch-controls {
+    margin-top: 14px;
   }
 
   .page-switcher-inline {
@@ -151,7 +161,9 @@
   .project-body,
   .glass-card,
   .skill-column,
-  .contact-card {
+  .contact-card,
+  .play-copy,
+  .play-card {
     padding: 16px;
   }
 
