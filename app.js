@@ -4,6 +4,10 @@ const mobileMenu = document.getElementById("mobile-menu");
 const revealItems = Array.from(document.querySelectorAll(".reveal"));
 const yearNode = document.getElementById("year");
 
+function updateHeaderState() {
+  document.body.classList.toggle("is-scrolled", window.scrollY > 18);
+}
+
 function toggleMenu(forceOpen) {
   if (!menuToggle || !mobileMenu) {
     return;
@@ -126,16 +130,65 @@ function renderFields(content) {
   });
 }
 
-async function loadContent() {
-  if (page === "home") {
-    return;
+function renderImages(content) {
+  document.querySelectorAll("[data-image-field]").forEach((node) => {
+    const field = node.dataset.imageField;
+    const altField = node.dataset.altField;
+
+    if (content[field]) {
+      node.setAttribute("src", content[field]);
+    }
+
+    if (altField && content[altField]) {
+      node.setAttribute("alt", content[altField]);
+    }
+  });
+}
+
+function renderLinks(content) {
+  document.querySelectorAll("[data-link-field]").forEach((node) => {
+    const field = node.dataset.linkField;
+    const labelField = node.dataset.linkLabelField;
+
+    if (content[field]) {
+      node.setAttribute("href", content[field]);
+    }
+
+    if (labelField && content[labelField]) {
+      node.textContent = content[labelField];
+    }
+  });
+}
+
+function renderMeta(content) {
+  if (content.page_title) {
+    document.title = content.page_title;
   }
 
+  const description = document.querySelector('meta[name="description"]');
+  if (description && content.page_description) {
+    description.setAttribute("content", content.page_description);
+  }
+}
+
+async function loadContent() {
   const response = await fetch("content/site-content.json");
   const siteContent = await response.json();
   const content = siteContent[page];
 
+  if (!content) {
+    return;
+  }
+
+  renderMeta(content);
   renderFields(content);
+  renderImages(content);
+  renderLinks(content);
+
+  if (page === "home") {
+    return;
+  }
+
   renderProjects(content.projects);
   renderSkills(content.skills);
   renderContact(siteContent.shared);
@@ -162,6 +215,8 @@ document.addEventListener("click", (event) => {
   }
 });
 
+window.addEventListener("scroll", updateHeaderState, { passive: true });
+
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -179,6 +234,8 @@ revealItems.forEach((item) => revealObserver.observe(item));
 if (yearNode) {
   yearNode.textContent = new Date().getFullYear();
 }
+
+updateHeaderState();
 
 loadContent().catch(() => {
   console.error("Content could not be loaded. Serve the site through a local server or GitHub Pages.");

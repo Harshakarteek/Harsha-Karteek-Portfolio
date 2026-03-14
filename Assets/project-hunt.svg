@@ -1,0 +1,12 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#F3ECE2"/>
+  <circle cx="196" cy="196" r="142" fill="#C79B76" fill-opacity="0.2"/>
+  <circle cx="1008" cy="722" r="196" fill="#8AA7A1" fill-opacity="0.16"/>
+  <rect x="116" y="162" width="968" height="576" rx="48" fill="#FFF9F1"/>
+  <rect x="184" y="236" width="830" height="428" rx="34" fill="#E8D9C9"/>
+  <path d="M240 590L392 452L518 540L664 392L842 534L962 430V664H240V590Z" fill="#8AA7A1"/>
+  <path d="M240 622L394 486L518 572L664 432L844 574L962 472V664H240V622Z" fill="#6F675D"/>
+  <text x="116" y="112" fill="#2F2A24" font-family="Arial, sans-serif" font-size="42" font-weight="700">HUNT</text>
+  <text x="116" y="160" fill="#6F675D" font-family="Arial, sans-serif" font-size="24" letter-spacing="3">UNREAL ENGINE / LEVEL DESIGN</text>
+  <text x="116" y="804" fill="#6F675D" font-family="Arial, sans-serif" font-size="26">Level design prototype focused on layout, traversal, and pacing.</text>
+</svg>

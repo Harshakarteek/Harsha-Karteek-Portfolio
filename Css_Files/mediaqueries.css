@@ -1,3 +1,15 @@
+@media screen and (max-width: 1200px) {
+  .top-nav {
+    gap: 14px;
+    padding: 16px 18px;
+  }
+
+  .nav-links {
+    gap: 0.9rem;
+    font-size: 0.95rem;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .hero,
   .spotlight-card,
@@ -5,20 +17,27 @@
     grid-template-columns: 1fr;
   }
 
-  .landing-options,
-  .about-grid,
-  .project-grid,
-  .skills-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .hero {
+    min-height: auto;
+    gap: 24px;
+  }
+
+  .spotlight-visual img {
+    min-height: 220px;
   }
 
   .section-heading h2,
   .hero h1 {
     max-width: none;
   }
+
+  body[data-page="web"] .section,
+  body[data-page="game"] .section {
+    padding: 28px;
+  }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 920px) {
   .top-nav {
     display: none;
   }
@@ -31,14 +50,6 @@
     padding: 70px 0;
   }
 
-  .hero,
-  .landing-options,
-  .about-grid,
-  .project-grid,
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
   .page-shell {
     width: min(100% - 24px, 1160px);
   }
@@ -46,13 +57,58 @@
   .site-footer {
     grid-template-columns: 1fr;
   }
+
+  body[data-page="web"] .page-chooser,
+  body[data-page="game"] .page-chooser {
+    margin-top: 18px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .page-shell {
+    width: min(100% - 18px, 1160px);
+  }
+
+  .hero-actions,
+  .footer-links,
+  .project-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .project-cover {
+    min-height: 180px;
+  }
+
+  .page-switcher-inline {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 560px) {
   .top-nav,
   .mobile-nav {
-    padding: 16px 18px;
-    border-radius: 26px;
+    padding: 14px 16px;
+    border-radius: 22px;
+  }
+
+  body.is-scrolled .top-nav,
+  body.is-scrolled .mobile-nav {
+    padding: 12px 14px;
+    border-radius: 18px;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .mobile-nav {
+    gap: 10px;
   }
 
   .landing-hero,
@@ -62,22 +118,71 @@
   .spotlight-card,
   .skill-column,
   .contact-card {
-    padding: 20px;
+    padding: 18px;
+  }
+
+  body[data-page="web"] .section,
+  body[data-page="game"] .section {
+    margin-top: 16px;
+    padding: 18px;
+    border-radius: 20px;
   }
 
   .landing-hero h1,
   .hero h1 {
-    font-size: clamp(2.2rem, 12vw, 3.4rem);
+    font-size: clamp(1.7rem, 10vw, 2.6rem);
   }
 
   .section-heading h2 {
-    font-size: clamp(1.8rem, 10vw, 2.5rem);
+    font-size: clamp(1.35rem, 8vw, 1.9rem);
   }
 
-  .hero-actions,
-  .footer-links,
-  .project-links {
-    flex-direction: column;
-    align-items: flex-start;
+  body[data-page="web"] .portrait,
+  body[data-page="game"] .portrait {
+    width: min(100%, 200px);
+  }
+
+  .project-body,
+  .glass-card,
+  .skill-column,
+  .contact-card {
+    padding: 16px;
+  }
+
+  .menu-links {
+    width: calc(100vw - 18px);
+    right: -2px;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .switch-pill {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .page-shell {
+    width: calc(100% - 12px);
+  }
+
+  .landing-main {
+    gap: 18px;
+  }
+
+  .landing-hero,
+  .landing-card {
+    padding: 16px;
+  }
+
+  .hero-text,
+  .landing-card p,
+  .identity-band p,
+  .glass-card p,
+  .spotlight-card p,
+  .project-card p {
+    font-size: 0.94rem;
   }
 }

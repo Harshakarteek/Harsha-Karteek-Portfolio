@@ -18,37 +18,38 @@
       <header class="site-header">
         <nav class="top-nav" aria-label="Primary">
           <a class="logo" href="index.html">HK</a>
-          <div class="page-switcher">
-            <a class="switch-pill" href="game.html">Game Dev</a>
-            <a class="switch-pill" href="web.html">Web Dev</a>
-          </div>
+          <span class="nav-note" data-field="nav_note">Harsha Karteek</span>
         </nav>
       </header>
 
       <main class="landing-main">
         <section class="landing-hero reveal">
-          <p class="eyebrow">Choose My Work</p>
-          <h1>I keep my game work and web work separate so each one has its own space.</h1>
-          <p class="hero-text">
+          <p class="eyebrow" data-field="eyebrow">Choose My Work</p>
+          <h1 data-field="title">I keep my game work and web work separate so each one has its own space.</h1>
+          <p class="hero-text" data-field="intro">
             I'm building two focused portfolio pages. One is for my game
             development work in Unity and Unreal. The other is for my web
             development journey and full-stack growth.
           </p>
+          <div class="page-switcher page-switcher-inline">
+            <a class="switch-pill" href="game.html" data-link-field="game_page" data-link-label-field="game_button_label">Game Dev</a>
+            <a class="switch-pill" href="web.html" data-link-field="web_page" data-link-label-field="web_button_label">Web Dev</a>
+          </div>
         </section>
 
         <section class="landing-options">
-          <a class="landing-card landing-card-game reveal" href="game.html">
-            <span class="panel-tag">Game Development</span>
-            <h2>I build gameplay systems, atmosphere, prototypes, and playable releases.</h2>
-            <p>
+          <a class="landing-card landing-card-game reveal" href="game.html" data-link-field="game_page">
+            <span class="panel-tag" data-field="game_card_tag">Game Development</span>
+            <h2 data-field="game_card_title">I build gameplay systems, atmosphere, prototypes, and playable releases.</h2>
+            <p data-field="game_card_body">
               Explore my Unity projects, engines, tools, published builds, and
               the way I approach interaction and level feel.
             </p>
           </a>
-          <a class="landing-card landing-card-web reveal" href="web.html">
-            <span class="panel-tag">Web Development</span>
-            <h2>I'm growing into full-stack development through responsive interfaces and structured builds.</h2>
-            <p>
+          <a class="landing-card landing-card-web reveal" href="web.html" data-link-field="web_page">
+            <span class="panel-tag" data-field="web_card_tag">Web Development</span>
+            <h2 data-field="web_card_title">I'm growing into full-stack development through responsive interfaces and structured builds.</h2>
+            <p data-field="web_card_body">
               Explore my web projects, frontend work, learning track, and the
               systems I'm building toward.
             </p>

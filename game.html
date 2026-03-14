@@ -18,10 +18,6 @@
       <header class="site-header">
         <nav class="top-nav" aria-label="Primary">
           <a class="logo" href="index.html">HK</a>
-          <div class="page-switcher">
-            <a class="switch-pill is-active" href="game.html">Game Dev</a>
-            <a class="switch-pill" href="web.html">Web Dev</a>
-          </div>
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -44,7 +40,7 @@
             <span></span>
           </button>
           <ul class="menu-links" id="mobile-menu">
-            <li><a href="game.html">Game Dev</a></li>
+            <li><a class="is-active" href="game.html" aria-current="page">Game Dev</a></li>
             <li><a href="web.html">Web Dev</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -55,6 +51,13 @@
       </header>
 
       <main>
+        <section class="page-chooser reveal">
+          <div class="page-switcher page-switcher-inline">
+            <a class="switch-pill is-active" href="game.html" aria-current="page" data-link-field="current_page_url" data-link-label-field="current_page_label">Game Dev</a>
+            <a class="switch-pill" href="web.html" data-link-field="other_page_url" data-link-label-field="other_page_label">Web Dev</a>
+          </div>
+        </section>
+
         <section class="hero section page-hero" id="top">
           <div class="hero-copy reveal">
             <p class="eyebrow" data-field="eyebrow"></p>
@@ -67,6 +70,8 @@
                 href="https://harsha-karteek.itch.io/"
                 target="_blank"
                 rel="noreferrer"
+                data-link-field="secondary_cta_url"
+                data-link-label-field="secondary_cta_label"
               >
                 Open itch.io
               </a>
@@ -74,7 +79,13 @@
           </div>
           <div class="hero-visual reveal">
             <div class="portrait-card">
-              <img src="Assets/HK.png" alt="Portrait of Harsha Karteek" class="portrait" />
+              <img
+                src="Assets/HK.png"
+                alt="Portrait of Harsha Karteek"
+                class="portrait"
+                data-image-field="hero_image"
+                data-alt-field="hero_image_alt"
+              />
               <div class="portrait-glow portrait-glow-game"></div>
             </div>
           </div>
@@ -113,7 +124,12 @@
               <p data-field="feature_body"></p>
             </div>
             <div class="spotlight-visual">
-              <img src="Assets/project-happy-place.svg" alt="Featured game project artwork" />
+              <img
+                src="Assets/project-happy-place.svg"
+                alt="Featured game project artwork"
+                data-image-field="feature_image"
+                data-alt-field="feature_image_alt"
+              />
             </div>
           </article>
           <div class="project-grid reveal" id="project-grid"></div>
@@ -165,7 +181,7 @@
       <footer class="site-footer">
         <div>
           <a class="logo footer-logo" href="index.html">Harsha Karteek</a>
-          <p>I'm building games around atmosphere, interaction, and playable ideas that feel intentional.</p>
+          <p data-field="footer_text">I'm building games around atmosphere, interaction, and playable ideas that feel intentional.</p>
         </div>
         <div class="footer-links">
           <a href="#about">About</a>
